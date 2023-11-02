@@ -1,4 +1,5 @@
 const initialstate = {
+
     news: [],
     categoryNews: [],
     category: [
@@ -14,7 +15,6 @@ const initialstate = {
         "sport"
     ]
 }
-
 
 export const NewsReducer = (state = initialstate, action) => {
     switch (action.type) {
