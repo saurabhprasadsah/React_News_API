@@ -1,18 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import NewsItem from '../components/NewsItem'
+import { useDispatch, useSelector } from 'react-redux'
+import { getNewsStart } from '../redux/action/news.action';
 
 export default function Home() {
-  return (
+   const news =  useSelector(state => state.news);
+   const dispatch = useDispatch();
+   useEffect(()=>{
 
+    dispatch(getNewsStart())
+    
+   }, [] )
+
+
+  return (
     <div className="container">
       <div className="row">
-        <NewsItem />
-        <NewsItem />
-        <NewsItem />
-        <NewsItem />
-        <NewsItem />
-        <NewsItem />
-        <NewsItem />
+        {
+          news.length > 0 && news.map((n,i) =>  (
+            <NewsItem key={i}/>
+          ))
+        }
       </div>
       
     </div>
