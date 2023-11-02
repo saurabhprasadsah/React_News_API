@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function NewsItem() {
   return (
-    <div  className='col-sm-3'>
+    <div  className='col-sm-3 mt-5'>
       <div className="card" >
         <img src="..." className="card-img-top" alt="..." />
         <div className="card-body">
