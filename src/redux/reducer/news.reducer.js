@@ -18,6 +18,7 @@ const initialstate = {
 
 export const NewsReducer = (state = initialstate, action) => {
     switch (action.type) {
+        // eslint-disable-next-line no-undef
         case GET_NEWS_SUCCESS:
             console.log(action.payload);
             return {
