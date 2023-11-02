@@ -5,9 +5,7 @@ import { news } from "../saga/news.saga";
 
 const SagaMiddleware = createSagaMiddleware();
 
-
- const store = configureStore({
-
+const store = configureStore({
     reducer:NewsReducer,
     middleware: [SagaMiddleware],
     devTools: process.env.NODE_ENV === 'development' ? true : false
@@ -15,6 +13,6 @@ const SagaMiddleware = createSagaMiddleware();
 })
 
 
-SagaMiddleware.run(news)
 
+SagaMiddleware.run(news)
 export default store;
