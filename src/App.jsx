@@ -1,3 +1,4 @@
+import NewsItem from "./NewsItem";
 
 
 function App() {
@@ -19,6 +20,19 @@ function App() {
           </div>
         </div>
       </nav>
+
+      <div className="container">
+        <div className="row">
+          <NewsItem/>
+          <NewsItem/>
+          <NewsItem/>
+          <NewsItem/>
+          <NewsItem/>
+          <NewsItem/>
+          <NewsItem/>
+        </div>
+      </div>
+
     </>
   );
 }
