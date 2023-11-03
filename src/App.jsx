@@ -1,12 +1,11 @@
-import { Routes } from "react-router-dom";
-// import NewsItem from "./components/NewsItem";
 import Header from "./layouts/Header";
+import Router from "./Router"
 
 function App() {
   return (
     <>
       <Header />
-      <Routes/>
+      <Router />
     </>
   );
 }
