@@ -1,17 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
-export default function NewsItem() {
+export default function NewsItem({data}) {
   return (
-    <div  className='col-sm-3 mt-5'>
-      <div className="card" >
-        <img src="..." className="card-img-top" alt="..." />
+    <div className='col-sm-3 mt-4'>
+      <div className="card">
+        <img src={data.urlToImage} className="card-img-top" alt={data.title} />
         <div className="card-body">
-          <h5 className="card-title">Card title</h5>
-          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" className="btn btn-primary">Go somewhere</a>
+          <h5 className="card-title">{data.title}</h5>
+          <p className="card-text">{data.description}</p>
+          <Link to={data.url} className="btn btn-primary" target='_blank'>Read more</Link>
         </div>
       </div>
     </div>
   )
-
 }
+

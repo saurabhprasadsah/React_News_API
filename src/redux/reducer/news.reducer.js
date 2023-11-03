@@ -4,6 +4,7 @@ const initialstate = {
     news: [],
     categoryNews: [],
     category: [
+
         "war",
         "goverment",
         "politics",
@@ -13,14 +14,15 @@ const initialstate = {
         "economy",
         "fashion",
         "entertainment",
-        "sport"
+        "sports"
+        
     ]
 }
 
 export const NewsReducer = (state = initialstate, action) => {
     switch (action.type) {
         case GET_NEWS_SUCCESS: 
-        
+
             return {
                 ...state,
                 news: [...action.payload]

@@ -6,7 +6,6 @@ export default function Category() {
   return (
     <div className="container">
       <div className="row">
-
         <NewsItem />
         <NewsItem />
         <NewsItem />
@@ -14,7 +13,6 @@ export default function Category() {
         <NewsItem />
         <NewsItem />
         <NewsItem />
-        
       </div>
     </div>
 
