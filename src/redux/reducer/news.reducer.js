@@ -1,3 +1,7 @@
+import { GET_NEWS_SUCCESS } from "../constant/news.constant";
+
+
+
 const initialstate = {
 
     news: [],
