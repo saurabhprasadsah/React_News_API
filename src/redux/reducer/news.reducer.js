@@ -8,7 +8,7 @@ const initialstate = {
         "goverment",
         "politics",
         "education",
-        "health",
+        "Health",
         "environment",
         "economy",
         "fashion",
