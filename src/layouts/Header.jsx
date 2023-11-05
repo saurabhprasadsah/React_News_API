@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux'
 import { NavLink } from 'react-router-dom';
 
 export default function Header() {
-
     let category = useSelector(state => state.category);
     return (
         <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
@@ -17,9 +16,7 @@ export default function Header() {
                         {
                             category.length > 0 && category.map((c, i) => (
                                 <li className="nav-item" key={i}>
-
                                     <NavLink className="nav-link text-capitalize" to={`/category/${c}`}>{c}</NavLink>
-                                    
                                 </li>
                             ))
                         }
